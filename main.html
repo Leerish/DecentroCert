@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Certificate Details Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-number">Register Number</label>
+                <input type="text" id="reg-number" name="reg-number" placeholder="Enter your register number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stream">Stream</label>
+                <select id="stream" name="stream">
+                    <option value="">Select your stream</option>
+                    <option value="Science">Science</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="specialization">Specialization</label>
+                <input type="text" id="specialization" name="specialization" placeholder="Enter your specialization">
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Upload Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" placeholder="Enter any additional comments" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
